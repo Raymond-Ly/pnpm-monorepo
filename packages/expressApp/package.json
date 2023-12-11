@@ -1,0 +1,13 @@
+{
+  "name": "@pnpm-monorepo/express-app",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && nodemon ./dist/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@pnpm-monorepo/common-types": "^1.0.0"
+  }
+}
