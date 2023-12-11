@@ -10,5 +10,8 @@ PoC of a monorepo using pnpm workspace.
 ## Getting started
 
 1. Install workspace dependencies (used across packages): `pnpm install`
-1. To build a single package: `pnpm --filter "@pnpm-monorepo/express-app" build p`
-1. To build all packages: `pnpm --filter "*" build`
+1. To build a single apps/package: `pnpm --filter "@pnpm-monorepo/express-app-1" build`
+1. To build all apps: `pnpm --filter "*" build`
+
+
+Note: to clear all node_modules from apps: `pnpm recursive exec -- find . -name "node_modules" -type d -exec rm -rf {} +`

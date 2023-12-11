@@ -1,5 +1,5 @@
 {
-  "name": "@pnpm-monorepo/express-app",
+  "name": "@pnpm-monorepo/express-app-2",
   "version": "1.0.0",
   "main": "dist/index.js",
   "license": "MIT",
@@ -8,6 +8,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@pnpm-monorepo/common-types": "^1.0.0"
+    "@pnpm-monorepo/common-types": "workspace:^",
+    "@pnpm-monorepo/express-app-2-types": "workspace:^"
   }
 }
