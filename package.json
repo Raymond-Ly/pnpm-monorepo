@@ -6,6 +6,14 @@
   "keywords": [],
   "author": "Ray Ly <63705600+Raymond-Ly@users.noreply.github.com>",
   "license": "ISC",
+  "scripts": {
+    "install:app1": "pnpm --filter \"@pnpm-monorepo/express-app-1\"  deploy apps/expressApp1/build",
+    "build:app1": "cd apps/expressApp1/build && pnpm run build",
+    "deploy:app1": "pnpm install:app1 && pnpm build:app1",
+    "install:app2": "pnpm --filter \"@pnpm-monorepo/express-app-2\"  deploy apps/expressApp2/build",
+    "build:app2": "cd apps/expressApp1/build && pnpm run build",
+    "deploy:app2": "pnpm install:app2 && pnpm build:app2"
+  },
   "dependencies": {
     "nodemon": "^3.0.2"
   }
