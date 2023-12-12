@@ -9,6 +9,13 @@
   },
   "dependencies": {
     "@pnpm-monorepo/common-types": "workspace:^",
-    "@pnpm-monorepo/express-app-2-types": "workspace:^"
+    "@pnpm-monorepo/express-app-1-types": "workspace:^",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@types/express": "^4.17.21"
   }
 }
